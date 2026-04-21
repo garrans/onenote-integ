@@ -108,12 +108,12 @@ Dependency tags: `blocks:` = must be done before, `parallel:` = can run simultan
 
 ## Area J — Observability and Operations
 
-- [ ] J-T01 Define structured log schema (timestamp, correlationId, sourceSystem, artifactId, action, outcome). `blocks: J-T02`
-- [ ] J-T02 Implement correlation ID propagation (attach to event envelope; thread through all components). `blocks: J-T03`
-- [ ] J-T03 Add log instrumentation to renderer, monitor, and connectors. `blocks: J-T04`
-- [ ] J-T04 Define sync metrics contract (events processed, pages created, patches applied, errors, latency). `blocks: J-T05`
-- [ ] J-T05 Implement audit log writer (maps connector+event→page action for traceability). `blocks: V-T03`
-- [ ] J-T06 Write observability tests (assert log fields present and correlationId threads end-to-end).
+- [x] J-T01 Define structured log schema (timestamp, correlationId, sourceSystem, artifactId, action, outcome). `blocks: J-T02`
+- [x] J-T02 Implement correlation ID propagation (attach to event envelope; thread through all components). `blocks: J-T03`
+- [x] J-T03 Add log instrumentation to renderer, monitor, and connectors. `blocks: J-T04`
+- [x] J-T04 Define sync metrics contract (events processed, pages created, patches applied, errors, latency). `blocks: J-T05`
+- [x] J-T05 Implement audit log writer (maps connector+event→page action for traceability). `blocks: V-T03`
+- [x] J-T06 Write observability tests (assert log fields present and correlationId threads end-to-end).
 
 ---
 
