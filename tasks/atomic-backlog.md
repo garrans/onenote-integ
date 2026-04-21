@@ -4,7 +4,7 @@ Each task is one concern and independently verifiable.
 
 ## Phase 0
 
-- [ ] P0-T01 Initialize git repository and baseline project files.
+- [x] P0-T01 Initialize git repository and baseline project files.
 - [ ] P0-T02 Convert architecture source to editable Markdown.
 - [ ] P0-T03 Validate heading fidelity and section completeness.
 
