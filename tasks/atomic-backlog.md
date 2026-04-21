@@ -98,11 +98,11 @@ Dependency tags: `blocks:` = must be done before, `parallel:` = can run simultan
 
 ## Area I — Conflict and Error Handling
 
-- [ ] I-T01 Define retryable vs terminal error taxonomy. `blocks: I-T02`
-- [ ] I-T02 Implement dead-letter queue handler (park terminal failures with context). `blocks: I-T03`
-- [ ] I-T03 Implement conflict detection logic (user-edited owned block → flag conflict). `blocks: I-T04`
-- [ ] I-T04 Implement reconciliation task skeleton (accept or reject conflicted version). `blocks: V-T02`
-- [ ] I-T05 Write conflict scenario tests (user edits owned block → conflict correctly flagged).
+- [x] I-T01 Define retryable vs terminal error taxonomy. `blocks: I-T02`
+- [x] I-T02 Implement dead-letter queue handler (park terminal failures with context). `blocks: I-T03`
+- [x] I-T03 Implement conflict detection logic (user-edited owned block → flag conflict). `blocks: I-T04`
+- [x] I-T04 Implement reconciliation task skeleton (accept or reject conflicted version). `blocks: V-T02`
+- [x] I-T05 Write conflict scenario tests (user edits owned block → conflict correctly flagged).
 
 ---
 
