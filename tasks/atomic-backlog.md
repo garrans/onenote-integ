@@ -26,12 +26,12 @@ Dependency tags: `blocks:` = must be done before, `parallel:` = can run simultan
 
 ## Area B — Identity and Authentication
 
-- [ ] B-T01 Define token provider interface (acquire, refresh, cache). `blocks: B-T02`
-- [ ] B-T02 Implement service account OAuth token acquisition (auth code seeded refresh token path). `blocks: B-T03`
-- [ ] B-T03 Implement secure token storage using Key Vault reference from A-T03. `blocks: B-T04`
-- [ ] B-T04 Implement token renewal background task (refresh before expiry). `blocks: F-T02`
-- [ ] B-T05 Write contract tests for token provider interface with mock identity server.
-- [ ] B-T06 Document conditional access requirements for service account.
+- [x] B-T01 Define token provider interface (acquire, refresh, cache). `blocks: B-T02`
+- [x] B-T02 Implement service account OAuth token acquisition (auth code seeded refresh token path). `blocks: B-T03`
+- [x] B-T03 Implement secure token storage using Key Vault reference from A-T03. `blocks: B-T04`
+- [x] B-T04 Implement token renewal background task (refresh before expiry). `blocks: F-T02`
+- [x] B-T05 Write contract tests for token provider interface with mock identity server.
+- [x] B-T06 Document conditional access requirements for service account.
 
 ---
 
