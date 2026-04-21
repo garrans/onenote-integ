@@ -88,11 +88,11 @@ Dependency tags: `blocks:` = must be done before, `parallel:` = can run simultan
 
 ## Area H — OneNote Change Monitor
 
-- [ ] H-T01 Implement Graph webhook subscription for OneNote page change notifications. `blocks: H-T02`
-- [ ] H-T01b Implement polling fallback (check `lastModifiedTime` and content hash on interval). `parallel: H-T01`
-- [ ] H-T02 Implement content hash comparison against stored hash in State Store. `blocks: H-T03`
-- [ ] H-T03 Implement change event publisher (`onenote.page.edited.v1` with affected artifactId and block hints). `blocks: I-T02`
-- [ ] H-T04 Write change detection tests (simulated page edit → correct event published).
+- [x] H-T01 Implement Graph webhook subscription for OneNote page change notifications. `blocks: H-T02`
+- [x] H-T01b Implement polling fallback (check `lastModifiedTime` and content hash on interval). `parallel: H-T01`
+- [x] H-T02 Implement content hash comparison against stored hash in State Store. `blocks: H-T03`
+- [x] H-T03 Implement change event publisher (`onenote.page.edited.v1` with affected artifactId and block hints). `blocks: I-T02`
+- [x] H-T04 Write change detection tests (simulated page edit → correct event published).
 
 ---
 
