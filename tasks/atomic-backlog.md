@@ -79,10 +79,10 @@ Dependency tags: `blocks:` = must be done before, `parallel:` = can run simultan
 
 ## Area G — State and Mapping Store
 
-- [ ] G-T01 Define storage schema (artifact↔page mapping, sync cursor, content hash tables). `blocks: G-T02`
-- [ ] G-T02 Implement migration baseline (schema version 1). `blocks: G-T03`
-- [ ] G-T03 Implement idempotent upsert contract (lookup or create for artifact↔page mapping). `blocks: F-T03, H-T02`
-- [ ] G-T04 Write persistence tests (upsert idempotency, mapping lookup, hash comparison).
+- [x] G-T01 Define storage schema (artifact↔page mapping, sync cursor, content hash tables). `blocks: G-T02`
+- [x] G-T02 Implement migration baseline (schema version 1). `blocks: G-T03`
+- [x] G-T03 Implement idempotent upsert contract (lookup or create for artifact↔page mapping). `blocks: F-T03, H-T02`
+- [x] G-T04 Write persistence tests (upsert idempotency, mapping lookup, hash comparison).
 
 ---
 
