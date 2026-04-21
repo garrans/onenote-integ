@@ -119,10 +119,10 @@ Dependency tags: `blocks:` = must be done before, `parallel:` = can run simultan
 
 ## Verification
 
-- [ ] V-T01 End-to-end test: seed NoteArtifact event → assert OneNote page created with correct blocks.
-- [ ] V-T02 Resilience test: simulate 429 throttle and partial failure → assert retry, dead-letter, and recovery.
-- [ ] V-T03 Security test: assert no tokens or secret values appear in structured logs.
-- [ ] V-T04 Isolation test: add and remove a connector → assert rest of system unchanged.
+- [x] V-T01 End-to-end test: seed NoteArtifact event → assert OneNote page created with correct blocks.
+- [x] V-T02 Resilience test: simulate 429 throttle and partial failure → assert retry, dead-letter, and recovery.
+- [x] V-T03 Security test: assert no tokens or secret values appear in structured logs.
+- [x] V-T04 Isolation test: add and remove a connector → assert rest of system unchanged.
 
 ---
 
