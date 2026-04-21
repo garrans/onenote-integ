@@ -58,10 +58,10 @@ Dependency tags: `blocks:` = must be done before, `parallel:` = can run simultan
 
 ## Area E — Connectors
 
-- [ ] E-T01 Define connector base interface (publish event, handle `onenote.page.edited`). `blocks: E-T02`
-- [ ] E-T02 Implement connector registration mechanism (plug-in pattern; add/remove without touching core). `blocks: E-T03`
-- [ ] E-T03 Implement one reference connector (stub external system → produces NoteArtifact events). `blocks: E-T04`
-- [ ] E-T04 Write isolation test (removing reference connector does not affect event bus or renderer).
+- [x] E-T01 Define connector base interface (publish event, handle `onenote.page.edited`). `blocks: E-T02`
+- [x] E-T02 Implement connector registration mechanism (plug-in pattern; add/remove without touching core). `blocks: E-T03`
+- [x] E-T03 Implement one reference connector (stub external system → produces NoteArtifact events). `blocks: E-T04`
+- [x] E-T04 Write isolation test (removing reference connector does not affect event bus or renderer).
 
 ---
 
