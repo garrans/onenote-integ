@@ -128,8 +128,8 @@ Dependency tags: `blocks:` = must be done before, `parallel:` = can run simultan
 
 ## Release Governance
 
-- [ ] R-T01 Define commit slicing policy (one task per commit, test evidence in message).
-- [ ] R-T02 Define branch protection policy (short-lived feature branches, protected `main`, required checks).
-- [ ] R-T03 Tag milestones: `M1-bootstrap`, `M2-schema+bus`, `M3-renderer`, `M4-monitor`, `M5-hardening`.
-- [ ] R-T04 Create operational runbook template (token renewal, dead-letter triage, webhook renewal).
+- [x] R-T01 Define commit slicing policy (one task per commit, test evidence in message).
+- [x] R-T02 Define branch protection policy (short-lived feature branches, protected `main`, required checks).
+- [x] R-T03 Tag milestones: `M1-bootstrap`, `M2-schema+bus`, `M3-renderer`, `M4-monitor`, `M5-hardening`.
+- [x] R-T04 Create operational runbook template (token renewal, dead-letter triage, webhook renewal).
 
