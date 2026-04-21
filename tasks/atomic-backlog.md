@@ -67,13 +67,13 @@ Dependency tags: `blocks:` = must be done before, `parallel:` = can run simultan
 
 ## Area F — OneNote Renderer
 
-- [ ] F-T01 Define Graph transport adapter interface (PATCH, GET, POST to OneNote API). `blocks: F-T02`
-- [ ] F-T02 Implement retry policy for transient Graph errors (429, 503). `blocks: F-T03`
-- [ ] F-T03 Implement page-create logic (new NoteArtifact → new OneNote page via template). `blocks: F-T04`
-- [ ] F-T04 Implement block-level PATCH logic (target `data-id` block; never overwrite `user-notes`). `blocks: F-T05`
-- [ ] F-T05 Implement template registry (maps `routing.template` to page HTML structure). `blocks: F-T06`
-- [ ] F-T06 Implement rendering pipeline (subscribe to artifact events → orchestrate create/patch). `blocks: I-T01`
-- [ ] F-T07 Write deterministic rendering tests (given NoteArtifact, assert correct page HTML and block targets).
+- [x] F-T01 Define Graph transport adapter interface (PATCH, GET, POST to OneNote API). `blocks: F-T02`
+- [x] F-T02 Implement retry policy for transient Graph errors (429, 503). `blocks: F-T03`
+- [x] F-T03 Implement page-create logic (new NoteArtifact → new OneNote page via template). `blocks: F-T04`
+- [x] F-T04 Implement block-level PATCH logic (target `data-id` block; never overwrite `user-notes`). `blocks: F-T05`
+- [x] F-T05 Implement template registry (maps `routing.template` to page HTML structure). `blocks: F-T06`
+- [x] F-T06 Implement rendering pipeline (subscribe to artifact events → orchestrate create/patch). `blocks: I-T01`
+- [x] F-T07 Write deterministic rendering tests (given NoteArtifact, assert correct page HTML and block targets).
 
 ---
 
