@@ -37,12 +37,12 @@ Dependency tags: `blocks:` = must be done before, `parallel:` = can run simultan
 
 ## Area C — Event Bus
 
-- [ ] C-T01 Define event envelope schema (`version`, `type`, `sourceSystem`, `correlationId`, `payload`). `blocks: C-T02`
-- [ ] C-T02 Define event type registry (`artifact.created.v1`, `artifact.updated.v1`, `artifact.deleted.v1`, `onenote.page.edited.v1`). `blocks: C-T03`
-- [ ] C-T03 Implement publisher abstraction (send message with envelope). `blocks: E-T01, F-T06`
-- [ ] C-T04 Implement subscriber abstraction (receive, deserialize, ack/nack). `blocks: E-T01, F-T06`
-- [ ] C-T05 Configure Azure Service Bus topics and subscriptions per event type. `blocks: C-T03`
-- [ ] C-T06 Write unit tests for publisher/subscriber round-trip with test doubles.
+- [x] C-T01 Define event envelope schema (`version`, `type`, `sourceSystem`, `correlationId`, `payload`). `blocks: C-T02`
+- [x] C-T02 Define event type registry (`artifact.created.v1`, `artifact.updated.v1`, `artifact.deleted.v1`, `onenote.page.edited.v1`). `blocks: C-T03`
+- [x] C-T03 Implement publisher abstraction (send message with envelope). `blocks: E-T01, F-T06`
+- [x] C-T04 Implement subscriber abstraction (receive, deserialize, ack/nack). `blocks: E-T01, F-T06`
+- [x] C-T05 Configure Azure Service Bus topics and subscriptions per event type. `blocks: C-T03`
+- [x] C-T06 Write unit tests for publisher/subscriber round-trip with test doubles.
 
 ---
 
