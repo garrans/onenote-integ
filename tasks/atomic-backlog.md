@@ -11,16 +11,16 @@ Dependency tags: `blocks:` = must be done before, `parallel:` = can run simultan
 - [x] P0-T02 Add reference architecture to `arch/` folder.
 - [x] P0-T03 Update `arch/architecture.md` summary from reference architecture.
 - [x] P0-T04 Update `docs/area-index.md` with architecture-derived areas.
-- [ ] P0-T05 Validate area index against reference architecture for completeness.
+- [x] P0-T05 Validate area index against reference architecture for completeness.
 
 ---
 
 ## Area A — Foundation and Configuration
 
-- [ ] A-T01 Define typed settings contract (required fields, types, defaults). `blocks: A-T02`
-- [ ] A-T02 Implement environment variable loader with validation. `blocks: A-T03`
-- [ ] A-T03 Add Key Vault reference placeholder pattern (no secrets in repo). `blocks: B-T01`
-- [ ] A-T04 Write unit tests for config validation (missing required fields, wrong types).
+- [x] A-T01 Define typed settings contract (required fields, types, defaults). `blocks: A-T02`
+- [x] A-T02 Implement environment variable loader with validation. `blocks: A-T03`
+- [x] A-T03 Add Key Vault reference placeholder pattern (no secrets in repo). `blocks: B-T01`
+- [x] A-T04 Write unit tests for config validation (missing required fields, wrong types).
 
 ---
 
