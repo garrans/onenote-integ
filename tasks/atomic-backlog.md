@@ -48,11 +48,11 @@ Dependency tags: `blocks:` = must be done before, `parallel:` = can run simultan
 
 ## Area D — NoteArtifact Canonical Schema
 
-- [ ] D-T01 Write JSON schema file for NoteArtifact v1 (all fields from reference architecture). `blocks: D-T02`
-- [ ] D-T02 Generate or write typed model classes from schema. `blocks: D-T03`
-- [ ] D-T03 Implement schema validation utility (validates incoming events at bus boundary). `blocks: E-T01`
-- [ ] D-T04 Write schema validation tests (valid artifact, missing required fields, unknown version).
-- [ ] D-T05 Document versioning strategy for NoteArtifact schema evolution.
+- [x] D-T01 Write JSON schema file for NoteArtifact v1 (all fields from reference architecture). `blocks: D-T02`
+- [x] D-T02 Generate or write typed model classes from schema. `blocks: D-T03`
+- [x] D-T03 Implement schema validation utility (validates incoming events at bus boundary). `blocks: E-T01`
+- [x] D-T04 Write schema validation tests (valid artifact, missing required fields, unknown version).
+- [x] D-T05 Document versioning strategy for NoteArtifact schema evolution.
 
 ---
 

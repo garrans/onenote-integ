@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "note-artifact-v1",
+  "title": "NoteArtifact",
+  "description": "Canonical interchange object exchanged over the Event Bus between Connectors and the OneNote Renderer.",
+  "type": "object",
+  "required": ["version", "artifactId", "sourceSystem", "title", "body"],
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+$",
+      "description": "Schema version (semver major.minor). Current: 1.0.",
+      "example": "1.0"
+    },
+    "artifactId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 255,
+      "description": "Unique, stable primary key for this artifact across all events."
+    },
+    "sourceSystem": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "description": "Identifier for the originating connector/system, e.g. 'InspectionsApp', 'Jira'."
+    },
+    "sourceRecordId": {
+      "type": "string",
+      "maxLength": 2048,
+      "description": "ID or deep-link URL pointing back to the source record (optional)."
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 512,
+      "description": "Title or heading used as the OneNote page title."
+    },
+    "body": {
+      "type": "string",
+      "description": "Main content as a normalized HTML fragment or Markdown string."
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string", "maxLength": 128 },
+      "default": [],
+      "description": "Tags or categories."
+    },
+    "people": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string", "minLength": 1, "maxLength": 256 },
+          "role": { "type": "string", "maxLength": 128, "description": "e.g. 'author', 'assignedTo'" }
+        }
+      },
+      "default": []
+    },
+    "attachments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["filename"],
+        "additionalProperties": false,
+        "properties": {
+          "filename": { "type": "string", "minLength": 1, "maxLength": 512 },
+          "fileId":   { "type": "string", "maxLength": 512, "description": "ID or path in storage." },
+          "url":      { "type": "string", "maxLength": 2048, "description": "Accessible URL (optional)." }
+        }
+      },
+      "default": []
+    },
+    "timestamps": {
+      "type": "object",
+      "required": ["created"],
+      "additionalProperties": false,
+      "properties": {
+        "created":     { "type": "string", "format": "date-time" },
+        "lastUpdated": { "type": "string", "format": "date-time" }
+      }
+    },
+    "relationships": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "parentArtifactId":   { "type": "string", "maxLength": 255 },
+        "relatedArtifactIds": {
+          "type": "array",
+          "items": { "type": "string", "maxLength": 255 },
+          "default": []
+        }
+      }
+    },
+    "routing": {
+      "type": "object",
+      "required": ["notebookName", "sectionName"],
+      "additionalProperties": false,
+      "properties": {
+        "notebookName": { "type": "string", "minLength": 1, "maxLength": 256 },
+        "sectionName":  { "type": "string", "minLength": 1, "maxLength": 256 },
+        "template":     { "type": "string", "maxLength": 128, "description": "Template name in Template Registry." }
+      }
+    },
+    "renderHints": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "layout":   { "type": "string", "maxLength": 64, "description": "e.g. 'timeline', 'detailed'" },
+        "priority": { "type": "string", "enum": ["high", "medium", "low"] }
+      }
+    }
+  }
+}
